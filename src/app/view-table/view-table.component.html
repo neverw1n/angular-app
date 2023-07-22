@@ -1,0 +1,8 @@
+<button class="btn btn-primary" (click)="Logout()">
+  Logout
+</button>
+<app-table [headers]="headersName" [dataRows]="articles">
+    <ng-template #head let-headersName>
+      <th *ngFor="let item of headersName">{{item}}</th>
+    </ng-template>
+   </app-table>

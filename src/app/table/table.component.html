@@ -1,0 +1,20 @@
+<table>
+    <thead>
+    <tr>
+        <ng-container *ngTemplateOutlet="head; context: {$implicit: headers}"></ng-container>
+    </tr>
+        <ng-container *ngTemplateOutlet="datas; context: {$implicit: dataRows}"></ng-container>
+
+    </thead>
+    <ng-content></ng-content>
+</table>
+
+<ng-template #head let-headersName>
+    <th *ngFor="let item of headersName">{{item}}</th>
+</ng-template>
+
+<ng-template #datas let-articles>
+    <tr *ngFor="let item of articles">
+        <td>{{item.UserID}}</td><td>{{item.ArticleName}}</td>
+    </tr> 
+</ng-template>

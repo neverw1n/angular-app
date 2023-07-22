@@ -1,0 +1,15 @@
+form {
+    display: block;
+    margin: 0 auto;
+    max-width: 350px;
+    width: 100%;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}
